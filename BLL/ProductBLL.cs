@@ -15,6 +15,7 @@ public class ProductBLL
     public void NewProduct(Product product)
     {
     
+    
         if (product==null)
         {
             throw new Exception("Ürün bilgileri eksik veya hatalıdır.Lütfen tekrar deneyiniz.");

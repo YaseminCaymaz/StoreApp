@@ -14,6 +14,7 @@ public class OrderBLL
 
     public void NewOrder(Order order)
     {
+        
         // Aynı müşterinin 24 saat içinde en fazla 3 sipariş verebilme kuralını kontrol et
         if (_orderDAL.GetSon24SaatSiparisSayisi(order.CustomerId) >= 3)
         {
